@@ -1,16 +1,39 @@
-# RDS Script Structure Template
-# Version 1.0
+This is a structure file for the creation of a script
+<structure>
 
-<program>
-  <default actions>
-    <action>build gui</action>
-    <action>Title of screen = "Level online wizard"</action>
-    <action>build gui</action>
+<global script info>
+Script name: "Level online wizard"
+</global script info>
 
+<global rules>
+rule: script must use a gui for interaction
+rule: script muse use powershell
+rule: give all error or info messages on screen within a graphical popup window, with an OK button to continue.
+rule: script always default to section "home"
+</global rules>
 
+<gui structure>
+prerequisite: 3 buttons on topside of gui next to each other. 
+<button 1>
+  <sectiontarget "home">
+</button1>
+<button 2>
+  <sectiontarget "RDS Server selection">
+</button2>
+<button 3>
+  <sectiontarget "About">
+</button3>
 
+<section "home">
+prerequisite: Show text "Welcome to the level online wizard"
+</section "home">
 
+<section "RDS Server selection">
+prerequisite: Show text "RDS Server selection"
+</section "home">
 
+<section "About">
+prerequisite: Show text "About"
+</section "home">
 
-</program>
-  
+</structure>
