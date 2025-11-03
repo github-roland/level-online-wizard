@@ -1,0 +1,16 @@
+# RDS Script Structure Template
+# Version 1.0
+
+<program>
+  <default actions>
+    <action>build gui</action>
+    <action>Title of screen = "Level online wizard"</action>
+    <action>build gui</action>
+
+
+
+
+
+
+</program>
+  
